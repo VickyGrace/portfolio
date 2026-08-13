@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Ton Nom] — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">DORKAS<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#about">Profil</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="terminal" role="img" aria-label="Terminal affichant une présentation de Djibril Gueye">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">djibril@l2-info: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="out">[Ton Nom Complet]</p>
+          <p><span class="prompt">$</span> cat role.txt</p>
+          <p class="out">[Ta formation, ex : Étudiante en Licence 2 Informatique]</p>
+          <p><span class="prompt">$</span> ls competences/</p>
+          <p class="out">[Compétence1  Compétence2  Compétence3]</p>
+          <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="eyebrow">Portfolio — Développement Web</p>
+        <h1>[Ta phrase d'accroche — ce qui te définit en une ligne]</h1>
+        <p class="lead">[Une courte présentation : où tu es basée, ce qui te passionne dans l'informatique, ce que tu recherches.]</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+    </div>
+    <div class="pattern-divider" aria-hidden="true"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow">01 — Présentation</p>
+      <h2>Qui suis-je</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          [Écris ici 3-4 phrases sur toi : ton nom, ta formation, ce que tu étudies, ce que tu aimes
+          particulièrement dans l'informatique ou dans un domaine précis, et ce que tu recherches
+          (stage, projet, opportunité).]
+        </p>
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-label">Formation</span>
+            <span class="fact-value">[Ta formation]</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Localisation</span>
+            <span class="fact-value">[Ta ville]</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Langues</span>
+            <span class="fact-value">[Tes langues]</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Centres d'intérêt</span>
+            <span class="fact-value">[Tes centres d'intérêt]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow">02 — Compétences</p>
+      <h2>Ce que je maîtrise</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>[Catégorie 1, ex : Conception]</h3>
+          <ul class="tag-list">
+            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>[Catégorie 2, ex : Bases de données]</h3>
+          <ul class="tag-list">
+            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>[Catégorie 3, ex : Développement]</h3>
+          <ul class="tag-list">
+            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>[Catégorie 4, ex : Outils]</h3>
+          <ul class="tag-list">
+            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow">03 — Projets</p>
+      <h2>Réalisations récentes</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-tag">[Catégorie du projet]</div>
+          <h3>[Nom du projet 1]</h3>
+          <p>[Description en 1-2 phrases : quel était l'objectif, ce que tu as fait.]</p>
+          <ul class="project-meta">
+            <li>[Détail 1]</li>
+            <li>[Détail 2]</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">[Catégorie du projet]</div>
+          <h3>[Nom du projet 2]</h3>
+          <p>[Description en 1-2 phrases.]</p>
+          <ul class="project-meta">
+            <li>[Détail 1]</li>
+            <li>[Détail 2]</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">[Catégorie du projet]</div>
+          <h3>[Nom du projet 3]</h3>
+          <p>[Description en 1-2 phrases.]</p>
+          <ul class="project-meta">
+            <li>[Détail 1]</li>
+            <li>[Détail 2]</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">[Catégorie du projet]</div>
+          <h3>[Nom du projet 4]</h3>
+          <p>[Description en 1-2 phrases.]</p>
+          <ul class="project-meta">
+            <li>[Détail 1]</li>
+            <li>[Détail 2]</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-inner">
+      <p class="eyebrow">04 — Contact</p>
+      <h2>Travaillons ensemble</h2>
+      <p class="lead">Que ce soit pour un projet académique, un stage ou une simple discussion autour du développement web, n'hésitez pas à me contacter.</p>
+      <div class="contact-links">
+        <a href="mailto:ton.email@example.com" class="btn btn-primary">ton.email@example.com</a>
+        <a href="https://github.com/ton-pseudo-github" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/ton-profil" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 [Ton Nom] — Construit avec HTML, CSS &amp; Git.</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
