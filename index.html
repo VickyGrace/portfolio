@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[Ton Nom] — Portfolio</title>
+<title>Victoria Grâce — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital@1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="#top" class="nav-brand">DORKAS<span class="dot">.</span></a>
+    <a href="#top" class="nav-brand">VG<span class="dot">.</span></a>
     <nav class="nav-links">
       <a href="#about">Profil</a>
       <a href="#skills">Compétences</a>
@@ -30,32 +30,31 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="terminal" role="img" aria-label="Terminal affichant une présentation de Djibril Gueye">
-        <div class="terminal-bar">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="terminal-title">djibril@l2-info: ~</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="prompt">$</span> whoami</p>
-          <p class="out">[Ton Nom Complet]</p>
-          <p><span class="prompt">$</span> cat role.txt</p>
-          <p class="out">[Ta formation, ex : Étudiante en Licence 2 Informatique]</p>
-          <p><span class="prompt">$</span> ls competences/</p>
-          <p class="out">[Compétence1  Compétence2  Compétence3]</p>
-          <p><span class="prompt">$</span> <span class="cursor">_</span></p>
-        </div>
-      </div>
       <div class="hero-text">
         <p class="eyebrow">Portfolio — Développement Web</p>
-        <h1>[Ta phrase d'accroche — ce qui te définit en une ligne]</h1>
-        <p class="lead">[Une courte présentation : où tu es basée, ce qui te passionne dans l'informatique, ce que tu recherches.]</p>
+        <h1>J'aime construire des choses claires, utiles et bien pensées.</h1>
+        <p class="lead">Basée à Dakar, Sénégal. Passionnée par l'informatique et curieuse d'apprendre de nouvelles technologies, je m'intéresse particulièrement à la conception et au développement web.</p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">Voir mes projets</a>
           <a href="#contact" class="btn btn-ghost">Me contacter</a>
         </div>
       </div>
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <p class="hero-card-label">Actuellement</p>
+          <h2 class="hero-card-name">Victoria Grâce</h2>
+          <p class="hero-card-role">Étudiante en Licence 2 Informatique</p>
+          <div class="hero-card-divider"></div>
+          <p class="hero-card-tags">UML · SQL/Oracle · HTML-CSS</p>
+        </div>
+      </div>
     </div>
-    <div class="pattern-divider" aria-hidden="true"></div>
+    <div class="pattern-divider" aria-hidden="true">
+      <svg viewBox="0 0 400 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,10 Q25,0 50,10 T100,10 T150,10 T200,10 T250,10 T300,10 T350,10 T400,10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="50" cy="10" r="2.5"/><circle cx="150" cy="10" r="2.5"/><circle cx="250" cy="10" r="2.5"/><circle cx="350" cy="10" r="2.5"/>
+      </svg>
+    </div>
   </section>
 
   <!-- ABOUT -->
@@ -65,26 +64,27 @@
       <h2>Qui suis-je</h2>
       <div class="about-grid">
         <p class="about-text">
-          [Écris ici 3-4 phrases sur toi : ton nom, ta formation, ce que tu étudies, ce que tu aimes
-          particulièrement dans l'informatique ou dans un domaine précis, et ce que tu recherches
-          (stage, projet, opportunité).]
+          Je m'appelle Victoria Grâce, étudiante en Licence 2 Informatique. Mon parcours académique
+          couvre la modélisation UML, les bases de données relationnelles (SQL/Oracle), ainsi que le
+          développement web. J'aime apprendre en profondeur et progresser étape par étape sur chaque
+          projet, en portant une attention particulière à la clarté et à l'organisation.
         </p>
         <div class="about-facts">
           <div class="fact">
             <span class="fact-label">Formation</span>
-            <span class="fact-value">[Ta formation]</span>
+            <span class="fact-value">Licence 2 — Informatique</span>
           </div>
           <div class="fact">
             <span class="fact-label">Localisation</span>
-            <span class="fact-value">[Ta ville]</span>
+            <span class="fact-value">Dakar, Sénégal</span>
           </div>
           <div class="fact">
             <span class="fact-label">Langues</span>
-            <span class="fact-value">[Tes langues]</span>
+            <span class="fact-value">Français, Anglais</span>
           </div>
           <div class="fact">
             <span class="fact-label">Centres d'intérêt</span>
-            <span class="fact-value">[Tes centres d'intérêt]</span>
+            <span class="fact-value">Lecture</span>
           </div>
         </div>
       </div>
@@ -99,30 +99,30 @@
       <div class="skills-grid">
 
         <div class="skill-card">
-          <h3>[Catégorie 1, ex : Conception]</h3>
+          <h3>Conception & Modélisation</h3>
           <ul class="tag-list">
-            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+            <li>UML</li><li>Diagrammes de classes</li><li>Cas d'utilisation</li>
           </ul>
         </div>
 
         <div class="skill-card">
-          <h3>[Catégorie 2, ex : Bases de données]</h3>
+          <h3>Bases de données</h3>
           <ul class="tag-list">
-            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+            <li>SQL</li><li>Oracle</li><li>Modèle relationnel</li>
           </ul>
         </div>
 
         <div class="skill-card">
-          <h3>[Catégorie 3, ex : Développement]</h3>
+          <h3>Développement</h3>
           <ul class="tag-list">
-            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+            <li>HTML5</li><li>CSS3</li><li>PHP</li>
           </ul>
         </div>
 
         <div class="skill-card">
-          <h3>[Catégorie 4, ex : Outils]</h3>
+          <h3>Outils</h3>
           <ul class="tag-list">
-            <li>[Compétence]</li><li>[Compétence]</li><li>[Compétence]</li>
+            <li>Git & GitHub</li><li>VS Code</li><li>XAMPP</li>
           </ul>
         </div>
 
@@ -188,8 +188,8 @@
       <h2>Travaillons ensemble</h2>
       <p class="lead">Que ce soit pour un projet académique, un stage ou une simple discussion autour du développement web, n'hésitez pas à me contacter.</p>
       <div class="contact-links">
-        <a href="mailto:ton.email@example.com" class="btn btn-primary">ton.email@example.com</a>
-        <a href="https://github.com/ton-pseudo-github" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:vickymanon36@gmail.com" class="btn btn-primary">vickymanon36@gmail.com</a>
+        <a href="https://github.com/VickyGrace" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/ton-profil" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
@@ -198,7 +198,7 @@
 </main>
 
 <footer class="footer">
-  <p>© 2026 [Ton Nom] — Construit avec HTML, CSS &amp; Git.</p>
+  <p>© 2026 Victoria Grâce — Construit avec HTML, CSS &amp; Git.</p>
 </footer>
 
 <script>
